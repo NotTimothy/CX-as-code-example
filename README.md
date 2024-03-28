@@ -1,0 +1,1 @@
+# This is a working example of the Terraform provider found here: https://github.com/MyPureCloud/terraform-provider-genesyscloud/tree/main
