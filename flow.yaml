@@ -1,15 +1,15 @@
 inboundCall:
-  name: Terraform Flow Test-e74202b4-a83b-4247-a7d1-b1e94e752344
-  description: test description 2
+  name: Terraform Test Flow
+  description: This is a test flow built using Terraform
   defaultLanguage: en-us
   startUpRef: ./menus/menu[mainMenu]
   initialGreeting:
-    tts: Archy says hi!!!!!
+    tts: Welcome to ACME.
   menus:
     - menu:
         name: Main Menu
         audio:
-          tts: You are at the Main Menu, press 9 to disconnect.
+          tts: You are at the Main Menu, press 1 to go to the helpdesk, press 9 to disconnect.
         refId: mainMenu
         choices:
           - menuDisconnect:
