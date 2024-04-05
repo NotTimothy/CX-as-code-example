@@ -1,7 +1,7 @@
 provider "genesyscloud" {
-  oauthclient_id = "PROVIDE_YOUR_CLIENT"
-  oauthclient_secret = "PROVIDE_YOUR_SECRET"
-  aws_region = "REGION"
+  oauthclient_id = "ec17cd8a-8e7a-42eb-a418-646e21d0ef7f"
+  oauthclient_secret = "GghqamoGM5lhSaUC53mTVFj03uFhTt7l3NgP6PEz5BU"
+  aws_region = "us-west-2"
 }
 
 terraform {
@@ -59,8 +59,8 @@ resource "genesyscloud_architect_ivr" "simple_ivr" {
   closed_hours_flow_id  = data.genesyscloud_architect_schedules.closed.id
   holiday_hours_flow_id = data.genesyscloud_architect_schedules.holiday.id
   depends_on         = [
-    genesyscloud_flow.open_messaging,
     genesyscloud_architect_schedulegroups.open_messaging_schedulegroups,
     genesyscloud_architect_schedules.open_messaging_schedule,
+    genesyscloud_flow.open_messaging,
   ]
 }
